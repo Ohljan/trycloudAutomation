@@ -23,7 +23,7 @@ public class LoginPage{
         public WebElement submitButton;
 
         public void login(){
-                Driver.getDriver().get("http://qa3.trycloud.net/index.php/login?clear=1");
+                Driver.getDriver().get(ConfigurationReader.getProperty("env"));
                 userNameInput.sendKeys(ConfigurationReader.getProperty("username1"));
                 passwordInput.sendKeys(ConfigurationReader.getProperty("password"));
                 submitButton.click();

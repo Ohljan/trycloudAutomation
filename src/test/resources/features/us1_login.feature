@@ -7,7 +7,7 @@ When user use username "<username>" and passcode "<password>"
 And user click the login button
 Then verify the user should be at the dashboard page
 Examples:
-| username    | password     |
-| user7            | Userpass123 |
-| user34          | Userpass123 |
-| user99          | Userpass123 |
+  | username | password    |
+  | user7    | Userpass123 |
+  | user34   | Userpass123 |
+  | user99   | Userpass123 |

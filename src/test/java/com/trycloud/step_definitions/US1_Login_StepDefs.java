@@ -15,8 +15,8 @@ public class US1_Login_StepDefs {
     }
     @When("user use username {string} and passcode {string}")
     public void userUseUsernameAndPasscode(String username, String password) {
-        loginPage.userNameInput.sendKeys(username);
-        loginPage.passwordInput.sendKeys(password);
+         loginPage.userNameInput.sendKeys(username);
+         loginPage.passwordInput.sendKeys(password);
 
 
     }
