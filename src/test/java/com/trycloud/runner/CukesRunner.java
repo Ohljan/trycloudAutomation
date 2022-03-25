@@ -16,9 +16,8 @@ import org.junit.runner.RunWith;
 
         },
         dryRun = false,
-        tags = "@fails",
+        tags = "@us12",
         publish=true
-
 
 
 )
