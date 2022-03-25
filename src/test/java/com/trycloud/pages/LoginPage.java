@@ -26,7 +26,7 @@ public class LoginPage{
         public WebElement errorMessage;
 
         public void login(){
-                Driver.getDriver().get(ConfigurationReader.getProperty("env"));
+                Driver.getDriver().get(ConfigurationReader.getProperty("env2"));
                 userNameInput.sendKeys(ConfigurationReader.getProperty("username1"));
                 passwordInput.sendKeys(ConfigurationReader.getProperty("password"));
                 submitButton.click();
