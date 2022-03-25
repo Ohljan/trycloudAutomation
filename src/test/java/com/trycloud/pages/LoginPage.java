@@ -22,6 +22,9 @@ public class LoginPage{
         @FindBy(id = "submit-form")
         public WebElement submitButton;
 
+        @FindBy(xpath = "//p[contains(., 'Wrong username or password')]")
+        public WebElement errorMessage;
+
         public void login(){
                 Driver.getDriver().get(ConfigurationReader.getProperty("env"));
                 userNameInput.sendKeys(ConfigurationReader.getProperty("username1"));
