@@ -36,5 +36,7 @@ public class US1_Login_StepDefs {
     }
 
 
-
+    @Given("user is on the dashboard page")
+    public void userIsOnTheDashboardPage() {
+    }
 }
