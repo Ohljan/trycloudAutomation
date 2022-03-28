@@ -9,3 +9,4 @@ Feature: As a user, I should be able to write comments to files/folders.
     And user click the submit button to post itS
     When the user clicks the "Talk" moduleS
     Then Verify the comment is displayed in the comment sectionS.
+
