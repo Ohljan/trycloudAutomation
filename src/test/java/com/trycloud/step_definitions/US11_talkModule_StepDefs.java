@@ -39,6 +39,8 @@ public class US11_talkModule_StepDefs {
         talkModulePage.userFind.click();
     }
 
+
+
     @When("user write a message")
     public void user_write_a_message() {
         talkModulePage.messageBox.sendKeys("Hello, how are you?");
