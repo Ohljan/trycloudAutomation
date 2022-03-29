@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber",
 
         },
-        dryRun = false,
+        dryRun = true,
         tags = "",
         publish=true
 
