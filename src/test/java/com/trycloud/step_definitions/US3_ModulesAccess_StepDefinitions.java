@@ -40,6 +40,7 @@ public class US3_ModulesAccess_StepDefinitions {
 
         for (WebElement each : modulesPage.mainModules) {
             BrowserUtils.hover(each);
+            BrowserUtils.highlight(each);
             actualModules.add(each.getText());
         }
 
