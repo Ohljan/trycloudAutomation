@@ -1,5 +1,6 @@
 package com.trycloud.step_definitions;
 
+import com.trycloud.pages.FilesPage;
 import com.trycloud.pages.LoginPage;
 import com.trycloud.pages.TalkModulePage;
 import com.trycloud.utilities.Driver;
@@ -20,10 +21,10 @@ public class US11_talkModule_StepDefs {
     }
 
     TalkModulePage talkModulePage = new TalkModulePage();
-
+    FilesPage filesPage=new FilesPage();
     @When("the user clicks the {string} module")
     public void the_user_clicks_the_module(String string) {
-        talkModulePage.talkModule.click();
+        filesPage.filesOrTalkModule(string);
     }
 
     @Then("verify the page title is {string}")
