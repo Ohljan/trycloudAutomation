@@ -28,4 +28,18 @@ public class LoginPage{
                 passwordInput.sendKeys(ConfigurationReader.getProperty("password"));
                 submitButton.click();
         }
+
+        public void login(String envKey){
+                Driver.getDriver().get(envKey);
+                userNameInput.sendKeys(ConfigurationReader.getProperty("username1"));
+                passwordInput.sendKeys(ConfigurationReader.getProperty("password"));
+                submitButton.click();
+        }
+
+        public void login(String envKey,String userName, String password){
+                Driver.getDriver().get(envKey);
+                userNameInput.sendKeys(ConfigurationReader.getProperty(userName));
+                passwordInput.sendKeys(ConfigurationReader.getProperty(password));
+                submitButton.click();
+        }
 }
